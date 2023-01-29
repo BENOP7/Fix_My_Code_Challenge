@@ -4,10 +4,13 @@
 """
 
 
-class square:
+class Square:
     """
         This class a model of a square with width and length
     """
+    width = 0
+    height = 0
+
     def __init__(self, *args, **kwargs):
         """
             Constructor
@@ -31,7 +34,7 @@ class square:
 
 
 if __name__ == "__main__":
-    s = square(width=12, height=9)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area())
     print(s.perimeter())
